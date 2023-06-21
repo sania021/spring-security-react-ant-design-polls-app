@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copy maven executable to the image
 COPY mvnw .
-RUN dos2unix mnvw
+RUN dos2unix mvnw
 COPY .mvn .mvn
 
 # Copy the pom.xml file
