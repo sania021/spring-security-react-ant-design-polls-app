@@ -9,13 +9,13 @@ pipeline {
 
     stage('docker compose stop') {
       steps {
-        sh 'sudo docker-compose down'
+        bat 'docker-compose down'
       }
     }
 
     stage('docker compose start') {
       steps {
-        sh 'sudo docker-compose up -d'
+        bat  'docker-compose up -d'
       }
     }
 
